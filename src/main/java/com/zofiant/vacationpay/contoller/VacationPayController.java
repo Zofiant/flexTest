@@ -14,7 +14,7 @@ public class VacationPayController {
     }
 
 
-    @GetMapping(path = "/sumVacationPay")
+    @GetMapping(path = "/calculate")
     private double sumVacationPay( PayInfoDto payInfoDto){
         return vacationPayService.calculateVacationPay(payInfoDto);
     }
